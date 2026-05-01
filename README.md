@@ -18,13 +18,15 @@ A full-stack team task management application with role-based access control, pr
 
 ## 🛠 Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Backend | Node.js + Express.js |
-| Database | SQLite (via `better-sqlite3`) |
-| Auth | JWT + bcrypt |
-| Frontend | HTML5, CSS3, Vanilla JavaScript |
-| Deployment | Railway |
+| Layer | Technology | Details |
+|-------|------------|---------|
+| **Backend** | Node.js + Express.js | Core server framework |
+| **Database** | SQLite | Persistent relational storage |
+| **Authentication** | JWT + bcryptjs | Secure token-based auth & password hashing |
+| **Security** | Express Rate Limit | Protection against brute-force attacks |
+| **Validation** | Express Validator | Server-side input sanitization & validation |
+| **Frontend** | Vanilla JS, HTML5, CSS3 | Modern, responsive, dependency-free UI |
+| **Deployment** | Railway | Cloud hosting & continuous deployment |
 
 ## 🔐 API Endpoints
 
