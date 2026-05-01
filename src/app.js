@@ -34,7 +34,7 @@ async function startServer() {
 
   // Health check
   app.get('/api/health', (req, res) => {
-    res.json({ success: true, message: 'OrbitTask API running!', version: '1.0.0', timestamp: new Date().toISOString() });
+    res.json({ success: true, message: 'Taskman API running!', version: '1.0.0', timestamp: new Date().toISOString() });
   });
 
   // Serve frontend SPA for all non-API routes
@@ -54,7 +54,7 @@ async function startServer() {
 
   const PORT = process.env.PORT || 3000;
   app.listen(PORT, () => {
-    console.log(`🚀 OrbitTask running on port ${PORT}`);
+    console.log(`🚀 Taskman running on port ${PORT}`);
     console.log(`📊 Dashboard: http://localhost:${PORT}`);
     console.log(`🔌 API: http://localhost:${PORT}/api/health`);
   });
